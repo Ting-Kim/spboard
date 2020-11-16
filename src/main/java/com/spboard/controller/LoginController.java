@@ -11,10 +11,12 @@ public class LoginController {
 
     @GetMapping("/login")
     public String loginHome(){
-
+        log.info("login");
+        System.out.println("LogIn Controller 호출!");
         return "login";
     }
 
+    // 구현해야 함
     @PostMapping("/login")
     public String login(){
         return "login";
